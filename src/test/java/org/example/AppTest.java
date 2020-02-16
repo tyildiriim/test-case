@@ -13,8 +13,8 @@ import org.apache.log4j.Logger;
 public class AppTest extends BaseClass
 {
 
-    String email = "tugceyildirim017@hotmail.com";
-    String pwd = "12345n11";
+    String email = "yourEmailAddress";
+    String pwd = "*******";
     String searchKey = "bilgisayar";
 
 
