@@ -36,7 +36,7 @@ public class AppTest extends BaseClass
         Thread.sleep(2000);
         driver.findElement(By.cssSelector("#loginButton")).click(); //Login
         Thread.sleep(3000);
-        //login işlemini kontrol et!!!
+        
 
         driver.findElement(By.cssSelector("#searchData")).sendKeys(searchKey);// Arama kutucuğuna bilgisayar kelimesi girilir.
         Thread.sleep(4000);
@@ -60,7 +60,6 @@ public class AppTest extends BaseClass
         random.click();
         String lastPage = driver.getCurrentUrl();//Random olarak açtığım bilgisayarın url'i
         Thread.sleep(5000);
-
 
         driver.findElement(By.xpath("//a[@class='btn btnGrey btnAddBasket']")).click();//Sepete eklenir
         Thread.sleep(4000);
@@ -91,15 +90,6 @@ public class AppTest extends BaseClass
         Thread.sleep(5000);
         String bosSepetUrl = "https://www.n11.com/sepetim";
         Assert.assertEquals(bosSepetUrl,driver.getCurrentUrl());
-
-
-
-
-
-
-
-
-
 
         stop();
     }
